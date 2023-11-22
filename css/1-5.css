@@ -1,0 +1,49 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 85px;
+  padding-inline: 50px;
+}
+.header .header__logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.menu {
+  position: relative;
+  width: 35px;
+  height: 30px;
+}
+.menu .menu__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  border-radius: 999px;
+  transition: top 0.3s ease-out, transform 0.3s ease-out;
+}
+.menu .menu__line:nth-child(2) {
+  top: 14px;
+  transition: opacity 0.3s ease-out;
+}
+.menu .menu__line:nth-child(3) {
+  top: 28px;
+}
+.menu--active .menu__line:nth-child(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu--active .menu__line:nth-child(2) {
+  opacity: 0;
+}
+.menu--active .menu__line:nth-child(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
