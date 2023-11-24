@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@use "../common/scss/_variable.scss" as *;
+
+.h2 {
+	background: blue;
+	font-size: 60px;
+	font-weight: bold;
+	color: $c-white;
+}
+.txt {
+	margin-top: 100px;
+	background: blue;
+	font-size: 36px;
+	font-weight: bold;
+	color: $c-white;
+}
+.list {
+	list-style: inside;
+	.list__item {
+		margin-top: 50px;
+		background: blue;
+		font-size: 16px;
+		font-weight: bold;
+		color: $c-white;
+	}
+}
